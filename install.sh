@@ -139,7 +139,7 @@ install_XrayR() {
 
     mkdir -p /etc/XrayR/
     rm -f /etc/systemd/system/XrayR.service
-    file="https://github.com/XrayR-project/XrayR-release/raw/master/XrayR.service"
+    file="https://raw.githubusercontent.com/jesmine9924/Xrayr-self/refs/heads/main/XrayR.service"
     wget -q -N --no-check-certificate -O /etc/systemd/system/XrayR.service "${file}"
 
     systemctl daemon-reload
@@ -183,7 +183,7 @@ install_XrayR() {
         cp rulelist /etc/XrayR/
     fi
 
-    curl -o /usr/bin/XrayR -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/XrayR.sh
+    curl -o /usr/bin/XrayR -Ls https://raw.githubusercontent.com/jesmine9924/Xrayr-self/refs/heads/main/XrayR.sh
     chmod +x /usr/bin/XrayR
     ln -sf /usr/bin/XrayR /usr/bin/xrayr
 
